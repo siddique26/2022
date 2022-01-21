@@ -1,0 +1,148 @@
+:root {
+    --background: #000000;
+    --white: #ffffff;
+    --blue: #0366d6;
+}
+
+html {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+p::selection,
+h1::selection,
+h3::selection,
+img::selection,
+a::selection {
+    background-color: rgba(45, 170, 219, 0.3);
+}
+
+main {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 1.5em;
+    font-style: normal;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 0px 24px;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: static;
+    height: 80px;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 960px) {
+    .nav {
+        padding: 6vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav {
+        padding: 10px 24px;
+    }
+}
+
+.nav h3,
+.nav a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media only screen and (min-width: 100px) and (max-width: 960px) {
+    .nav a {
+        font-size: 1rem;
+    }
+}
+
+.title {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        height: 400px;
+    }
+}
+
+h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+nav .projects {
+    padding: 8px 0;
+}
+
+.project-nav {
+    display: flex;
+    column-gap: 16px;
+    border-bottom: 1px solid #292524;
+}
+
+.nav-box {
+    padding: 24px;
+    color: var(--white);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px; 
+}
+
+.nav-box a {
+    color: #7F7776;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav-box a:hover {
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 420px) {
+    .nav-box {
+        font-size: 18px;
+    }
+}
