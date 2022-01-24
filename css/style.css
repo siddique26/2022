@@ -20,6 +20,7 @@ body {
 
 a {
     text-decoration: none;
+    letter-spacing: 0.01em;
 }
 
 p {
@@ -30,6 +31,7 @@ p {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    letter-spacing: 0.01em;
 }
 
 main {
@@ -76,9 +78,11 @@ main {
 
 nav a {
     color: var(--white);
+    opacity: 50%;
     line-height: 1.5em;
+    letter-spacing: 0.01em;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -86,25 +90,29 @@ nav a {
 }
 
 nav a:hover {
-    opacity: 50%;
+    opacity: 100%;
     transition-timing-function: ease-in-out;
+}
+
+.current {
+    opacity: 100%;
 }
 
 @media screen and (min-width: 0) and (max-width: calc(1680px)) and (orientation: landscape) {
     nav a {
-        font-size: calc((1.8 - 1) * 1.2vh + 1rem);
+        font-size: calc((1.5 - 1) * 1.2vh + 1rem);
     }
 }
 
 @media screen and (min-width: 0) and (max-width: calc(1680px)) and (orientation: portrait) {
     nav a {
-        font-size: calc((1.8 - 1) * 1.2vh + 1rem);
+        font-size: calc((1.5 - 1) * 1.2vh + 1rem);
     }
 }
 
 @media screen and (min-width: 1680px) {
     nav a {
-        font-size: calc(1.8*1rem);
+        font-size: calc(1.5*1rem);
     }
 }
 
@@ -223,6 +231,7 @@ h3 {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    letter-spacing: 0.01em;
 }
 
 figure img {
@@ -265,30 +274,63 @@ footer {
     }
 }
 
-.copyright {
+.footer {
     text-align: left;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.01em;
 }
 
-.social-icons {
+.links {
     direction: ltr;
     display: flex;
     justify-content: flex-end;
 }
 
-.icons {
-    width: 40px;
-    height: 40px;
-    padding-right: 4px;
-}
-
 @media screen and (max-width: 767px) {
-    .social-icons {
+    .links {
         direction: ltr;
         display: flex;
         justify-content: center;
     }
-    .copyright {
+}
+
+@media screen and (max-width: 420px) {
+    
+    .footer {
         text-align: center;
         margin-bottom: 24px;
+    }
+}
+
+.bio {
+    margin: 120px 0;
+}
+
+@media screen and (max-width: 420px) {
+    .bio {
+        margin: 40px 0;
+    }
+ }
+
+h5 {
+    font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+    color: var(--white);
+    line-height: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 24px 0;
+    padding: 0;
+    letter-spacing: 0.01em;
+}
+
+@media screen and (max-width: 420px) {
+   h5 {
+        font-size: 1.2rem;
     }
 }
