@@ -24,6 +24,7 @@ a {
 }
 
 a:hover {
+    opacity: 50%;
     text-decoration: underline;
 }
 
@@ -153,6 +154,7 @@ h1 .companylink {
 
 h1 .companylink:hover {
     opacity: 50%;
+    text-decoration: underline;
     transition-timing-function: ease-in-out;
 }
 
@@ -344,6 +346,11 @@ h5 .external-links {
 }
 
 h5 .external-links {
+    text-decoration: underline;
+}
+
+h5 .external-links:hover {
+    opacity: 50%;
     text-decoration: underline;
 }
 
