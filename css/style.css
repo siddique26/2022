@@ -183,6 +183,12 @@ h1 .companylink:hover {
     }
 }
 
+h5.heading  {
+    padding: 0 16px 24px 16px;
+    margin: 0;
+    opacity: 50%;
+}
+
 .body-wrapper {
     display: flex;
     flex-direction: column;
@@ -456,5 +462,17 @@ a.button {
 }
 
 a.button:hover {
+    text-decoration: none;
+}
+
+.wrapper h6 {
+    margin: 0 0 16px 0;
+}
+
+.wrapper .body-wrapper h5 {
+    margin: 0;
+}
+
+.wrapper a {
     text-decoration: none;
 }
