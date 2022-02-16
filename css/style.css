@@ -183,7 +183,7 @@ h1 .companylink:hover {
     }
 }
 
-h5.heading  {
+h5.heading {
     padding: 0 16px 24px 16px;
     margin: 0;
     opacity: 50%;
@@ -231,7 +231,8 @@ img {
     object-fit: cover;
 }
 
-h3, h3 .link {
+h3,
+h3 .link {
     font-size: calc((1.75 - 1) * 1.2vw + 1rem);
     color: var(--white);
     line-height: 1.5;
@@ -254,7 +255,9 @@ h3 .link:hover {
 
 
 @media screen and (max-width: 420px) {
-    h3, h3 .link {
+
+    h3,
+    h3 .link {
         font-size: 1.5rem;
     }
 }
@@ -450,7 +453,7 @@ h6 {
 a.button {
     display: inline-block;
     margin: 1em;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
     border: 0;
     border-radius: 30px;
     text-align: center;
@@ -459,6 +462,33 @@ a.button {
     background-color: transparent;
     border: 2px solid var(--white);
     color: var(--white);
+}
+
+a.button.deck {
+    display: inline-block;
+    flex-direction: row;
+    margin: 0 0 64px 0;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 28px;
+    border: none;
+    color: var(--background);
+}
+
+@media screen and (max-width: 420px) {
+    a.button.deck {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.25em;
 }
 
 a.button:hover {
@@ -476,3 +506,10 @@ a.button:hover {
 .wrapper a {
     text-decoration: none;
 }
+
+.deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
