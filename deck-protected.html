@@ -65,7 +65,7 @@
 
         #passwordPrompt {
             font-size: 18px;
-            margin-bottom: 16px;
+            margin-bottom: 15px;
         }
 
         #subtext {
@@ -121,6 +121,9 @@
             color: white;
         }
 
+        .inputs {
+            padding-bottom: 13px;
+        }
         #contentFrame {
             position: absolute;
             top: 0;
@@ -166,7 +169,7 @@
                  
                     <input id="pass" type="password" name="pass" class="input" placeholder="Enter the magic words"
                         autofocus>
-                    <div>
+                    <div class="inputs">
                         <span id="messageWrapper">
                             <span id="invalidPass" class="error">Sorry, please try again.</span>
                             <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
